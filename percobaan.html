@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+<style>
+	  div { background:blue;
+			color:white;
+			height:100px;
+			width:150px;
+	 }
+	  div.dbl { background:yellow;color:black; }
+</style>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+
+				var div = $("div:first");
+				div.dblclick(function () { 
+				  div.toggleClass('dbl'); 
+				});
+				$(".fadeout").click(function (e) 
+            { 
+               $("div")(); 
+            });
+		});
+</script>
+</head>
+<body>
+
+  <div></div><span>Double click the block</span>
+
+</body>
+</html>
